@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <!-- <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+      -->
+      <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  
+
+
+</head>
+<body class="bg-gray-900 text-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-md">
+        <h1 class="text-2xl font-semibold mb-4 text-center">To-Do List</h1>
+        <div class="flex gap-2 mb-4">
+            <input type="text" id="inputBox" placeholder="Enter a task" class="flex-1 px-3 py-2 border border-gray-700 rounded-md bg-gray-700 text-gray-100 focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50">
+            <button id="addButton" class="px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-500 active:scale-95 transition-transform">Add Task</button>
+        </div>
+        <div class="flex gap-2 mb-4">
+            <button id="deleteFirstButton" class="flex-1 px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-500 active:scale-95 transition-transform">Delete First Task</button>
+            <button id="deleteLastButton" class="flex-1 px-4 py-2 bg-orange-600 text-white rounded-md hover:bg-orange-500 active:scale-95 transition-transform">Delete Last Task</button>
+        </div>
+        <div class="todoList space-y-2"></div>
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>
